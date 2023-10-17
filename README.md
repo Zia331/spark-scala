@@ -10,7 +10,7 @@
 2) Scala: 2.13.5
 3) sbt: 1.9.6
 4) Java: 1.8.0_202 (JDK 8u202)
-> To set up the spark scala environment using sbt build tool, please see [here](https://dboyliao.medium.com/spark-%E9%96%8B%E7%99%BC-vscode-%E8%88%87-sbt-a9a453d85d51).
+To set up the spark scala environment using sbt build tool, please see [here](https://dboyliao.medium.com/spark-%E9%96%8B%E7%99%BC-vscode-%E8%88%87-sbt-a9a453d85d51).
 
 ## Clarification
 This homework is runned in Visual Studio Code with sbt build tool. I have allocated 2GB for the maximum heap size of JVM for better performance using '-J-Xmx2G' in *.sbtopt*.
@@ -42,4 +42,5 @@ The output of sub-task 3 is named "output.txt".
 ![Alt text](image-3.png)
 
 > Because sbt build tool logs too many information, only the parts that are required for this project are screenshotted.
+
 ![Alt text](image-4.png)
