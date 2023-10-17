@@ -10,6 +10,7 @@
 2) Scala: 2.13.5
 3) sbt: 1.9.6
 4) Java: 1.8.0_202 (JDK 8u202)
+
 > To set up the spark scala environment using sbt build tool, please see [here](https://dboyliao.medium.com/spark-%E9%96%8B%E7%99%BC-vscode-%E8%88%87-sbt-a9a453d85d51).
 
 ## Clarification
