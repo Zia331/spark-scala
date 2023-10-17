@@ -19,7 +19,7 @@ To run this project:
 
 Please place the input file at the outermost layer of the project's directory.
 After running the project, 2 folders named "target" will be produced.
-The output of sub-task 3 is named "output.txt"
+The output of sub-task 3 is named "output.txt".
 ```
 ├─project
 │  └─build.properties
@@ -30,9 +30,15 @@ The output of sub-task 3 is named "output.txt"
 ├─*target*
 ├─.sbtopts
 ├─build.sbt
-├─household_power_consumption.txt
+├─*household_power_consumption.txt*
 ├─output.txt
 ```
 
 ## Generated Output
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
+![Alt text](image-3.png)
 
+> Because sbt build tool logs too many information, only the parts that are required for this project are screenshotted.
+![Alt text](image-4.png)
