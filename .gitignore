@@ -1,4 +1,4 @@
 /.bsp/
 target/
-household_power_consumption.txt
+*.txt
 .gitignore
