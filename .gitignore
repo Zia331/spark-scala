@@ -1,4 +1,8 @@
 /.bsp/
 target/
 *.txt
-.gitignore
+
+# Homework related
+spacenews-202309.csv
+_SUCCESS
+*.crc
