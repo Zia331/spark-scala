@@ -9,8 +9,8 @@ object Main extends App {
   val spark = SparkSession
     .builder()
     .appName("hw0")
-    // .master("spark://192.168.56.104:7077")
-    .master("local[4]") //run locally with 4 cores
+    .master("spark://192.168.56.104:7077")
+    // .master("local[4]") //run locally with 4 cores
     .getOrCreate()
 
   val dataPath = "spacenews-202309.csv"
@@ -28,10 +28,10 @@ object Main extends App {
   val selectedDF = rawData.select(columnsToAnalyze.map(col): _*)
 
   // Q1
-  // val df1a = countWord("title",selectedDF)
-  // exportDataFrameAsCSV(df1a, "Q1_a").show()
-  // val df1b = countWordFrequency("title",selectedDF)
-  // exportDataFrameAsCSV(df1b, "Q1_b").show()
+  val df1a = countWord("title",selectedDF)
+  exportDataFrameAsCSV(df1a, "Q1_a").show()
+  val df1b = countWordFrequency("title",selectedDF)
+  exportDataFrameAsCSV(df1b, "Q1_b").show()
 
   // Q2
   val df2a = countWord("title",selectedDF)
