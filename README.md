@@ -39,6 +39,7 @@ After running the project with *sbt run*, 2 folders named "target" will be produ
 
 ## Generated Output
 Folders according to question number will be generated (Q1, Q2, ...).
+![BDMA_HW1_EXECUTE_TIME](BDMA_HW1.png)
 
 ## Homework information
 1) input file: [Space News Dataset](https://www.kaggle.com/datasets/patrickfleith/space-news-dataset) from Kaggle
