@@ -5,3 +5,4 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 libraryDependencies += "org.apache.spark" %% "spark-core" % "2.4.8"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.8"
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % "2.4.8"
+libraryDependencies += "org.apache.commons" % "commons-csv" % "1.8"

@@ -1,8 +1,9 @@
 /.bsp/
 target/
 *.txt
+.metals
 
 # Homework related
-spacenews-202309.csv
+Data
 _SUCCESS
 *.crc
