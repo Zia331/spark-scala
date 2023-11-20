@@ -3062,3 +3062,10 @@ scala.meta.tokenizers.TokenizeException: <input>:67: error: unclosed string inte
 2023.11.19 00:02:28 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
 2023.11.19 00:11:17 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
 2023.11.19 00:11:42 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2023.11.20 10:45:59 WARN  no build target for: /home/zia/spark-scala/build.sbt
+Nov 20, 2023 10:45:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10838
+2023.11.20 10:45:59 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/build.sbt
+2023.11.20 10:45:59 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/build.sbt
+Nov 20, 2023 10:47:47 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
