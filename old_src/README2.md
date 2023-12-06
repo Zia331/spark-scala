@@ -48,13 +48,16 @@ After running the project with *sbt run*, 2 folders named "target" will be produ
 ```
 
 ## Generated Output
-1) (Q1) : ![(output1)](output1.png)
-2) (Q2) : ![(output2)](output2.png)
-3) (Q3) : ![(output3)](output3.png)
-4) Cluster mode execution time:  ![BDMA_HW3](BDMA_HW3.png)
+1) (Q1) Total title word count: ![(title_word_count)](title_word_count.png)
+2) (Q1) Total headline word count: ![(headline_word_count)](headline_word_count.png)
+3) (Q1) Title most frequent words by date: ![title_wc_date](title_wc_date.png)
+4) (Q1) Title most frequent words by topic: ![title_wc_topic](title_wc_topic.png)
+5) (Q1) Headline most frequent words by date: ![headline_wc_date](headline_wc_date.png)
+6) (Q1) Headline most frequent words by topic: ![headline_wc_topic](headline_wc_topic.png)
+7) (Q2) CSV files named in *Q2_${platform}_by_day.csv* and *Q2_${platform}_by_hour.csv*.
+8) (Q3) Sum and average sentiment score of each topic: ![topic_avg_score](topic_avg_score.png)
+9) (Q4) CSV files named in the folders *${topic}_headline.csv* and *${topic}_title.csv* (Sorry for misleading by adding extension 'csv' to each folder).
+10) Cluster mode execution time:  ![BDMA_HW2](BDMA_HW2.png)
 
 ## Homework information
 1) input file: [News Popularity in Multiple Social Media Platforms](https://archive.ics.uci.edu/dataset/432/news+popularity+in+multiple+social+media+platforms) from UCI ML Repository
-
-## Problem
-Only a maximum of three input files can be read with 28gb memory allocated. Failed to read more files -> cause out of JVM heap memory 

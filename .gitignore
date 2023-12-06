@@ -1,4 +1,9 @@
 /.bsp/
 target/
-*.txt
-.gitignore
+.*
+*.csv
+
+# Homework related
+Data
+_SUCCESS
+*.crc
