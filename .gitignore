@@ -1,8 +1,6 @@
 /.bsp/
 target/
 *.csv
-.metals
-.vscode
 .scalafmt.conf
 
 # Homework related
