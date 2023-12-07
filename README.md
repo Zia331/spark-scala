@@ -31,7 +31,7 @@ To run this project in cluster mode:
 To view the project status in spark web ui please visit *http://<spark-master-ip>:8080*
 
 Please place the input file at the outermost layer of the project's directory.
-In HW2, all csv files should be placed in a folder named "Data".
+In HW3, all csv files should be placed in a folder named "Data".
 After running the project with *sbt run*, 2 folders named "target" will be produced.
 ```
 ├─project
@@ -43,7 +43,7 @@ After running the project with *sbt run*, 2 folders named "target" will be produ
 ├─*target*
 ├─.sbtopts
 ├─build.sbt
-├─*input_file.txt*
+├─*Data*
 ├─output.txt
 ```
 
