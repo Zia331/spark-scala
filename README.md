@@ -31,7 +31,7 @@ To run this project in cluster mode:
 To view the project status in spark web ui please visit *http://<spark-master-ip>:8080*
 
 Please place the input file at the outermost layer of the project's directory.
-In HW3, all csv files should be placed in a folder named "Data".
+All csv files should be placed in a folder named "Data".
 After running the project with *sbt run*, 2 folders named "target" will be produced.
 ```
 ├─project
@@ -48,11 +48,11 @@ After running the project with *sbt run*, 2 folders named "target" will be produ
 ```
 
 ## Generated Output
-1) (Q1) : ![(output1)](output1.png)
-2) (Q2) : ![(output2)](output2.png)
-3) (Q3) : ![(output3)](output3.png)
-4) (Q4) : ![(output4)](output4.png)
-5) (Q5) : ![(output5)](output5.png)
+1) (Q1) : ![(output1)](Q1.png)
+2) (Q2) : ![(output2a)](Q2a.png)![(output2b)](Q2b.png)![(output2c)](Q2c.png)
+3) (Q3) : ![(output3a)](Q3a.png)![(output3b)](Q3b.png)
+4) (Q4) : ![(output4)](Q4.png)
+5) (Q5) : ![(output5)](Q5.png)
 6) Cluster mode execution time:  ![BDMA_HW4](BDMA_HW4.png)
 
 ## Homework information
