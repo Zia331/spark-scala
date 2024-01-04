@@ -3599,3 +3599,639 @@ WARNING: Unmatched cancel notification for request id 1
 2023.12.28 18:12:59 INFO  time: code lens generation in 11s
 2023.12.28 18:12:59 INFO  time: code lens generation in 1.89s
 2023.12.28 18:13:00 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/build.sbt
+2023.12.28 18:14:04 WARN  no build target for: /home/zia/spark-scala/old_src/Main.scala
+2023.12.28 18:14:13 WARN  no build target for: /home/zia/spark-scala/old_src/Main_3.scala
+Dec 28, 2023 6:25:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 48
+Dec 28, 2023 6:25:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 57
+2024.01.04 09:10:33 INFO  Started: Metals version 1.2.0 in folders '/home/zia/spark-scala' for client Visual Studio Code 1.85.1.
+2024.01.04 09:10:38 WARN  Build server is not auto-connectable.
+2024.01.04 09:10:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:10:42 INFO  no build target found for /home/zia/spark-scala/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.04 09:10:45 INFO  time: code lens generation in 6.82s
+2024.01.04 09:19:39 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:33: error: unclosed string literal
+  val fileExtension = "
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+Jan 04, 2024 9:23:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 361
+2024.01.04 09:24:28 WARN  no build target for: /home/zia/spark-scala/old_src/Main_2.scala
+2024.01.04 09:27:28 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:29:09 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:30:24 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 9:35:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1249
+2024.01.04 09:38:16 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:38:53 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:39:48 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:39:48 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:41:04 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:41:30 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 9:42:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2067
+2024.01.04 09:43:08 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:43:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:43:51 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:44:50 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 9:56:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2489
+2024.01.04 09:56:39 WARN  no build target for: /home/zia/spark-scala/old_src/Main_1.scala
+2024.01.04 09:57:14 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:58:17 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:59:08 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 09:59:53 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 10:00:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2669
+2024.01.04 10:00:51 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 10:03:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2872
+2024.01.04 10:04:04 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:62: error: unclosed string literal
+    .groupBy("user_id",")
+                       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 10:04:05 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:62: error: unclosed string literal
+    .groupBy("user_id"")
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 10:04:16 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:20:12 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:28:52 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:29:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:31:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:31:50 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:33:56 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:37:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:37:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:40:50 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:40:57 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:42:56 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:43:23 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:43:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:44:11 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:44:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 10:44:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3870
+Jan 04, 2024 10:44:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3871
+Jan 04, 2024 10:44:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3875
+2024.01.04 10:44:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:44:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:50:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:50:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:51:49 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:52:52 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:55:15 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:57:03 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 10:58:50 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:04:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:06:43 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:08:13 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:09:52 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:10:41 WARN  Using indexes to guess the definition of correlationMatrixRow
+2024.01.04 11:10:41 WARN  Using indexes to guess the definition of correlationMatrixRow
+2024.01.04 11:10:46 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:10:46 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:12:36 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:13:42 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:13:45 WARN  Using indexes to guess the definition of correlationMatrix
+2024.01.04 11:15:33 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:16:30 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:16:30 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:16:30 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:18:12 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 11:19:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4882
+2024.01.04 11:20:43 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:20:47 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:21:09 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:21:26 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:21:39 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:22:21 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:23:00 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:23:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 11:23:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5087
+2024.01.04 11:23:56 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:25:54 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:26:07 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:27:26 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:28:13 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:28:44 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:29:32 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 11:30:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/zia/spark-scala/.metals/.reports/metals-full/2024-01-04/r_compiler-error_11-30-59-717.md
+Jan 04, 2024 11:31:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/zia/spark-scala/.metals/.reports/metals-full/2024-01-04/r_compiler-error_11-31-33-532.md
+2024.01.04 11:34:07 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:36:02 WARN  Using indexes to guess the definition of similarityMatrix
+2024.01.04 11:36:02 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 11:36:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5547
+Exception in thread "pool-5-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2024.01.04 11:38:51 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:39:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:41:16 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:41:30 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:42:54 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:43:36 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:44:29 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 11:44:59 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:30:29 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:30:29 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:31:03 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:33:22 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:36:05 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:44:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:44:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:44:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:44:36 WARN  Using indexes to guess the definition of correlationMatrix
+2024.01.04 12:45:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:45:14 WARN  no build target for: /home/zia/spark-scala/build.sbt
+2024.01.04 12:45:15 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/build.sbt
+2024.01.04 12:45:15 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/build.sbt
+2024.01.04 12:45:32 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:45:32 WARN  Using indexes to guess the definition of similarityMatrix
+2024.01.04 12:45:34 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:50:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:52:03 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 12:57:04 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:00:02 WARN  Using indexes to guess the definition of assembledData
+2024.01.04 13:00:06 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:03:31 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:04:04 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:04:36 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:06:32 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:06:42 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:06:49 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:48:41 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:49:08 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:49:08 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:49:39 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:50:15 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:50:52 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:51:05 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:51:36 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:52:41 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:56:17 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 1:56:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7257
+2024.01.04 13:58:12 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 13:59:23 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 1:59:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/zia/spark-scala/.metals/.reports/metals-full/2024-01-04/r_compiler-error_13-59-45-726.md
+2024.01.04 13:59:47 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:00:09 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:00:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 2:01:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/zia/spark-scala/.metals/.reports/metals-full/2024-01-04/r_compiler-error_14-01-01-535.md
+2024.01.04 14:01:06 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:01:44 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 2:02:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/zia/spark-scala/.metals/.reports/metals-full/2024-01-04/r_compiler-error_14-02-16-961.md
+2024.01.04 14:02:18 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:04:07 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:04:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:04:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:04:41 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:05:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:06:00 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed string literal
+  val similarityMatrix: Vector = correlationMatrix.pearson(features)")
+                                                                    ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 14:06:01 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed string literal
+  val similarityMatrix: Vector = correlationMatrix.(pearson(features)")
+                                                                     ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 14:06:01 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:06:01 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed string literal
+  val similarityMatrix: Vector = correlationMatrix.(pearson(features)")
+                                                                     ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 14:06:04 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed string literal
+  val similarityMatrix: Vector = correlationMatrix(pearson(features)")
+                                                                    ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 14:06:11 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:06:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:07:08 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:07:44 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:08:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:11:19 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 2:11:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8004
+2024.01.04 14:11:48 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:15:10 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/old_src/correlation.sc
+2024.01.04 14:15:18 WARN  no build target for: /home/zia/spark-scala/old_src/correlation.scala
+2024.01.04 14:15:18 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/old_src/correlation.scala
+2024.01.04 14:15:18 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/old_src/correlation.scala
+2024.01.04 14:15:26 WARN  Could not find semantic tokens for: file:///home/zia/spark-scala/old_src/correlation.scala
+2024.01.04 14:15:35 WARN  no build target for: /home/zia/spark-scala/old_src/correlation.scala
+2024.01.04 14:39:53 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:42:00 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:42:22 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:45:36 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:45:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:46:06 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:46:06 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 2:50:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8645
+2024.01.04 14:50:47 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:52:06 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:52:07 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:53:41 WARN  Using indexes to guess the definition of targetUserRatings
+2024.01.04 14:53:41 WARN  Using indexes to guess the definition of ratingDF
+2024.01.04 14:54:05 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:54:12 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:54:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:55:20 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 14:55:56 WARN  Using indexes to guess the definition of ratingDF
+2024.01.04 14:56:04 WARN  Using indexes to guess the definition of ratingDF
+2024.01.04 14:56:11 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:01:16 WARN  Using indexes to guess the definition of movieDF
+2024.01.04 15:07:48 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:07:54 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:09:50 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:09:58 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:10:24 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:11:06 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:78: error: unclosed string interpolation
+  val targetUserRatings = ratingDF.filter($"user_id" === targetUser).drop"
+                                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 15:11:21 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 3:18:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9413
+2024.01.04 15:18:32 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:21:29 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:21:30 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:21:34 WARN  Using indexes to guess the definition of indexedRatings
+2024.01.04 15:21:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:22:33 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:23:31 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:24:40 WARN  Using indexes to guess the definition of indexedRatings
+2024.01.04 15:24:54 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:26:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:26:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:26:41 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:26:44 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:26:44 WARN  Using indexes to guess the definition of otherUserRatings
+2024.01.04 15:28:55 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:33:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 3:42:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11023
+2024.01.04 15:49:17 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:49:25 ERROR Failed to tokenize input for semantic tokens for /home/zia/spark-scala/src/main/scala/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:106: error: Invalid literal number
+  userDF.rdd..take(3map(row => {
+                   ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:864)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:335)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.01.04 15:49:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:50:23 WARN  Using indexes to guess the definition of joinedDF
+2024.01.04 15:50:25 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:51:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:51:45 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:51:46 WARN  Using indexes to guess the definition of targetUser
+2024.01.04 15:54:33 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:56:27 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 3:57:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11815
+2024.01.04 15:57:32 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:58:14 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 15:58:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 3:59:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11939
+Jan 04, 2024 4:03:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12138
+2024.01.04 16:03:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:03:46 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:04:01 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:04:31 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:05:16 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:05:29 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:05:29 WARN  Using indexes to guess the definition of targetUser
+2024.01.04 16:05:59 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:08:29 WARN  Using indexes to guess the definition of otherUserRatings
+2024.01.04 16:08:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:08:53 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:10:34 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:10:56 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:11:25 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:11:25 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:13:45 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:16:59 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:18:03 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:18:58 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:19:33 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:21:13 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:22:20 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:22:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:27:00 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 4:27:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12949
+2024.01.04 16:27:55 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:28:25 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:29:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 4:30:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13098
+2024.01.04 16:31:26 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:32:10 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:32:10 WARN  Using indexes to guess the definition of score
+Jan 04, 2024 4:32:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13280
+2024.01.04 16:32:49 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:32:54 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:33:23 WARN  Using indexes to guess the definition of UserScore
+2024.01.04 16:33:43 WARN  Using indexes to guess the definition of UserScore
+2024.01.04 16:33:45 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:36:41 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 4:37:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13571
+2024.01.04 16:37:29 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 4:38:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13704
+2024.01.04 16:40:46 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 4:41:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14017
+2024.01.04 16:43:26 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:44:06 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 4:44:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14201
+2024.01.04 16:45:04 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:52:05 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:55:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:56:39 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:57:14 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 16:58:03 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:01:21 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 5:12:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14743
+2024.01.04 17:12:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:13:51 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 5:13:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14861
+2024.01.04 17:14:14 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:15:59 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:16:07 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:18:11 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:18:42 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 5:20:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15152
+Jan 04, 2024 5:20:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15153
+2024.01.04 17:20:38 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 5:22:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/zia/spark-scala/.metals/.reports/metals-full/2024-01-04/r_compiler-error_17-22-19-743.md
+2024.01.04 17:22:37 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:23:21 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:27:31 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:27:35 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:30:08 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:31:53 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:32:40 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+2024.01.04 17:33:32 WARN  no build target for: /home/zia/spark-scala/src/main/scala/Main.scala
+Jan 04, 2024 5:33:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

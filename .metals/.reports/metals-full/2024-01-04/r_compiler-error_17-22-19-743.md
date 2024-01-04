@@ -1,3 +1,13 @@
+file://<WORKSPACE>/src/main/scala/Main.scala
+### java.lang.IndexOutOfBoundsException: 0
+
+occurred in the presentation compiler.
+
+action parameters:
+offset: 3355
+uri: file://<WORKSPACE>/src/main/scala/Main.scala
+text:
+```scala
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j.{Logger, Level}
 import org.apache.spark.sql.functions._
@@ -5,10 +15,6 @@ import org.apache.spark.sql.types._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.Row
-
-import java.io.FileWriter
-import java.io.PrintWriter
-import org.apache.commons.csv.CSVFormat
 
 import org.apache.spark.ml.feature.{StringIndexer, VectorAssembler}
 import org.apache.spark.mllib.linalg.{Vector,Vectors}
@@ -20,10 +26,10 @@ object Main extends App {
   val spark = SparkSession
     .builder()
     .appName("hw4")
-    // .master("spark://192.168.56.104:7077")
-    // .config("spark.executor.memory", "30g")  // Set executor memory
-    // .config("spark.driver.memory", "16g")  // Set driver memory
-    .master("local[8]") //run locally
+    .master("spark://192.168.56.104:7077")
+    .config("spark.executor.memory", "30g")  // Set executor memory
+    .config("spark.driver.memory", "16g")  // Set driver memory
+    // .master("local[8]") //run locally
     .getOrCreate()
 
 import spark.implicits._
@@ -88,7 +94,7 @@ import spark.implicits._
   // joinedDF.show()
 
   case class UserScore(id: String, score:Double)
-  val result: Array[UserScore] =  userDF.rdd.take(3).map(row => {
+  val result: Array[UserScore] =  userDF.rdd.map(row => {
     val user = row.getAs[String]("user_id")
     if(user != targetUser){
       val user_rdd = joinedDF
@@ -106,10 +112,9 @@ import spark.implicits._
     }else{
       UserScore("invalid", 0)
     }
-  }).sortBy(_.score)(Ordering.Double.reverse)
+  }).sortBy(_.score)(Ordering.Double.reverse,@@)
 
-  val sortedUserScores = result.sortBy(_.score)(Ordering.Double.reverse)
-  sortedUserScores.take(3).foreach(println)
+  result.take(20).foreach(println)
 
   // Q5
   val targetMovie = "10"
@@ -121,7 +126,7 @@ import spark.implicits._
   // joinedMovieDF.show()
 
   case class MovieScore(id: String, score:Double)
-  val result2: Array[MovieScore] =  movieDF.rdd.take(3).map(row => {
+  val result2: Array[MovieScore] =  movieDF.rdd.map(row => {
     val movie = row.getAs[String]("movie_id")
     if(movie != targetMovie){
       val movie_rdd = joinedMovieDF
@@ -139,10 +144,11 @@ import spark.implicits._
     }else{
       MovieScore("invalid", 0)
     }
-  })
+  }).sortBy(_.score)(Ordering.Double.reverse)
 
-  val sortedMovieScores = result2.sortBy(_.score)(Ordering.Double.reverse)
-  sortedMovieScores.take(3).foreach(println)
+  result2.take(20).foreach(println)
+
+  
 
   def readDatFile(path: String, columnNames: Seq[String]): DataFrame = {
     val textData = spark.sparkContext.textFile(path)
@@ -159,3 +165,24 @@ import spark.implicits._
   
   spark.stop()
 }
+```
+
+
+
+#### Error stacktrace:
+
+```
+scala.collection.LinearSeqOps.apply(LinearSeq.scala:131)
+	scala.collection.LinearSeqOps.apply$(LinearSeq.scala:128)
+	scala.collection.immutable.List.apply(List.scala:79)
+	dotty.tools.dotc.util.Signatures$.countParams(Signatures.scala:501)
+	dotty.tools.dotc.util.Signatures$.applyCallInfo(Signatures.scala:186)
+	dotty.tools.dotc.util.Signatures$.computeSignatureHelp(Signatures.scala:94)
+	dotty.tools.dotc.util.Signatures$.signatureHelp(Signatures.scala:63)
+	scala.meta.internal.pc.MetalsSignatures$.signatures(MetalsSignatures.scala:17)
+	scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:51)
+	scala.meta.internal.pc.ScalaPresentationCompiler.signatureHelp$$anonfun$1(ScalaPresentationCompiler.scala:388)
+```
+#### Short summary: 
+
+java.lang.IndexOutOfBoundsException: 0

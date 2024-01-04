@@ -26,7 +26,7 @@ To run this project in cluster mode:
     a) Create the directory in HDFS if not existed: HDFS dfs -mkdir -p hdfs://<spark-master-ip>:9000/user/username/
     b) Copy file to HDFS: hdfs dfs -copyFromLocal /absolute/path/to/input/file hdfs://<spark-master-ip>:9000/user/username
     c) To see whether file exists: hdfs dfs -ls hdfs://<spark-master-ip>:9000/user/username
-5) Submit to spark: `/path/to/spark/bin/spark-submit --master spark://<spark-master-ip>:7077 /path/to/your/project.jar  --deploy-mode cluster --driver-memory 8G --executor-memory 8G`
+5) Submit to spark: `/path/to/spark/bin/spark-submit --master spark://<spark-master-ip>:7077 /path/to/your/project.jar  --deploy-mode cluster --driver-memory 8G --executor-memory 4G`
 
 To view the project status in spark web ui please visit *http://<spark-master-ip>:8080*
 
@@ -51,9 +51,10 @@ After running the project with *sbt run*, 2 folders named "target" will be produ
 1) (Q1) : ![(output1)](output1.png)
 2) (Q2) : ![(output2)](output2.png)
 3) (Q3) : ![(output3)](output3.png)
-4) (Q4) : ![(output4)](output4.png)
-5) (Q5) : ![(output5)](output5.png)
-6) Cluster mode execution time:  ![BDMA_HW4](BDMA_HW4.png)
+4) Cluster mode execution time:  ![BDMA_HW3](BDMA_HW3.png)
 
 ## Homework information
-1) input file: [MovieLens 1M Dataset](http://grouplens.org/datasets/movielens/1m/) from grouplens.
+1) input file: [News Popularity in Multiple Social Media Platforms](https://archive.ics.uci.edu/dataset/432/news+popularity+in+multiple+social+media+platforms) from UCI ML Repository
+
+## Problem
+Only a maximum of three input files can be read with 28gb memory allocated. Failed to read more files -> cause out of JVM heap memory 
